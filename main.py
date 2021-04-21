@@ -18,6 +18,7 @@ def BibTexGenerator(json):
     ### Author  
     AUTHORS = " and ".join([f"{author['family']}{','} {author['given']}" for author in JSON_LOAD["author"]])
     AUTHORS = "author={"+AUTHORS+"},"
+
     
     ### Title
     TITLE = "title={"+JSON_LOAD['title']+"},"
@@ -58,6 +59,6 @@ if(DOI_REQUEST.status_code==200):
     BibTexGenerator(JSON_LOAD)
 
 else:
-    Logger("ERROR","Something Wrong")
+    Logger("ERROR","Something Wrong - HTTP Status Code :"+str(DOI_REQUEST.status_code))
 
 

@@ -20,6 +20,11 @@
 
 ---
 
+## Disclaimer ⚠️
+
+The doi.org API is quite unstable and can take up to 10 seconds to return a result.
+
+At times it may appear inaccessible, just wait a few moment.
 
 
 
