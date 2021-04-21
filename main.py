@@ -40,6 +40,9 @@ def BibTexGenerator(json):
 
     pyperclip.copy(FINAL)
     Logger("INFO","BibTex copy to your clipboard")
+    print("\n\n\n Result \n\n\n")
+    print(FINAL)
+
 
 
 print("Enter DOI Number Only URL")
