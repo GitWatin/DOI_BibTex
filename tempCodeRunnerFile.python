@@ -1,0 +1,10 @@
+import os
+
+
+mensu=int(input("Nbre Mensualité :"))
+depart=int(input("Montant emprunté :"))
+percent=int(input("Taux interet :"))
+
+total=depart*((1+percent)**12)
+
+print(total)
