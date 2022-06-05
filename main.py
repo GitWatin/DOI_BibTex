@@ -30,7 +30,7 @@ def BibTexGenerator(json):
 
 
     ## ID
-    KEY = str(JSON_LOAD["prefix"])+"_"+str(temp_date[1])+"_"+str(temp_date[0])
+    KEY = "article:"+str(JSON_LOAD["prefix"])+"_"+str(temp_date[1])+"_"+str(temp_date[0])
 
     ## Note
     NOTE ="note={ [En Ligne] - consulté le "+ time.strftime('%d') +" "+ calendar.month_name[int(time.strftime("%m"))] + " "+ time.strftime("%Y")+" }"
